@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout">
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_conversion_absoluteWidth="300dp" />
+
+
+    <TextView
+        android:id="@+id/txtEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/inSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address: "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_editor_absoluteY="83dp"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_conversion_absoluteWidth="79dp" />
+
+    <EditText
+        android:id="@+id/inSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Subject"
+        tools:layout_conversion_absoluteHeight="171dp"
+        tools:layout_editor_absoluteY="88dp"
+        tools:layout_editor_absoluteX="419dp"
+        tools:layout_conversion_absoluteWidth="0dp" />
+
+    <EditText
+        android:id="@+id/inBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Body"
+        tools:layout_conversion_absoluteHeight="108dp"
+        tools:layout_editor_absoluteY="196dp"
+        tools:layout_editor_absoluteX="435dp"
+        tools:layout_conversion_absoluteWidth="0dp" />
+</LinearLayout>
